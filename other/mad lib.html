@@ -1,0 +1,45 @@
+<!- this code works. on the website i have to put the string directly in, instead of using the variable story1 like right now for it to pass it off. Let me know if you have questions. -->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+ 
+    <h1>Mad Libs</h1>
+     
+    <ul>
+      <li>Noun: <input type="text" id="noun"></li>
+      <li>Adjective: <input type="text" id="adjective"></li>
+      <li>Someone's Name: <input type="text" id="person"></li>
+    </ul>
+     
+    <button id="lib-button">Lib it!</button>
+      
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+ 
+    <script>
+
+        var libButton = document.getElementById('lib-button');
+        
+        var libIt = function() {
+        var storyDiv = document.getElementById("story");
+        var name = document.getElementById("noun").value;
+        var adjective = document.getElementById("adjective").value;
+        var person = document.getElementById("person").value;
+        var story1 = "once upon a time there was a " + name + " who hated peaches so much that the " + name + " swerved while driving to stay away from a peach stand and ran into a " + document.getElementById("adjective").value + " bush in " + document.getElementById("person").value + "'s yard, who came out yelling and ironically threw peaches at " + document.getElementById("adjective").value + ". The end.";
+        // var story1 = "story";
+        storyDiv.innerHTML = story1;
+        };
+        libButton.addEventListener('click', libIt);
+        
+    </script>
+  
+ </body>
+</html>
+
+

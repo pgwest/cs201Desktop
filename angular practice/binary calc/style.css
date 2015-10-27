@@ -1,0 +1,69 @@
+body {
+    font-family:"Courier New";
+}
+.calcbody {
+    background:#0074D9;
+    width:450px;
+    padding:10px;
+    box-shadow: 5px 5px 5px #888888;
+    border-radius:12px;
+    margin: auto;
+    text-align: center;
+
+    font-size:large;
+    color: white;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+h2 {
+    font-weight:bold;
+    color: white;
+}
+#result {
+    background: white;
+    width:300px;
+    text-align: center;
+    margin: auto;
+    border-radius:12px;
+    font-size: 20px;
+    font-weight:bold;
+}
+input[type=checkbox] {
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+#plus {
+    margin: auto;
+}
+.binarybox input[type='checkbox'] + label:before {
+    content:"0";
+}
+.binarybox input[type='checkbox']:checked + label:before {
+    content:"1";
+}
+.binarybox input[type='checkbox'] {
+    display:none;
+}
+.binarybox {
+    list-style: none;
+    display: inline-block;
+}
+label {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor:pointer;
+}
+ul {
+    list-style: none;
+}
+#instructions {
+    margin: auto;
+    text-align: center;
+}

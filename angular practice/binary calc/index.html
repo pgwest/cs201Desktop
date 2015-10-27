@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <title>Binary Calc</title>
+</head>
+<body>
+<div ng-app ng-controller="Ctrl">
+     <h1 align="center"> Binary Calculator</h1>
+
+    <div class="calcbody">
+        <div id="toprow">
+            <ul>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="28" ng-click='updateOutput(7, 1)' />
+                    <label for="28"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="27" ng-click='updateOutput(6, 1)' />
+                    <label for="27"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="26" ng-click='updateOutput(5, 1)' />
+                    <label for="26"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="25" ng-click='updateOutput(4, 1)'/>
+                    <label for="25"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="24"  ng-click='updateOutput(3, 1)'/>
+                    <label for="24"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="23"  ng-click='updateOutput(2, 1)'/>
+                    <label for="23"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="22"  ng-click='updateOutput(1, 1)'/>
+                    <label for="22"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="21"  ng-click='updateOutput(0, 1)'/>
+                    <label for="21"></label>
+                </li>
+                = {{val1}}
+            </ul>
+            <!--top row end-->
+        </div>
+         <h2> + </h2> 
+        <!--Bottom Row Start-->
+        <div id="bottomrow">
+            <ul>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="18"  ng-click='updateOutput(7, 2)'/>
+                    <label for="18"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="17" ng-click='updateOutput(6, 2)' />
+                    <label for="17"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="16" ng-click='updateOutput(5, 2)' />
+                    <label for="16"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="15" ng-click='updateOutput(4, 2)' />
+                    <label for="15"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="14" ng-click='updateOutput(3, 2)' />
+                    <label for="14"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="13" ng-click='updateOutput(2, 2)' />
+                    <label for="13"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="12" ng-click='updateOutput(1, 2)' />
+                    <label for="12"></label>
+                </li>
+                <li class="binarybox">
+                    <input type="checkbox" name="question" id="11" ng-click='updateOutput(0, 2)'  />
+                    <label for="11"  ></label>
+                </li>
+                = {{val2}}
+            </ul>
+            <!--bottom rom-->
+        </div>
+        <br>
+        <div id="result" name="array4" style="color:#000000">{{array4}} = {{val3}}<!--<br>array1 {{array1}}<br>array2 {{array2}}--></div>
+        <!--Calc Body End-->
+    </div>
+    <br>
+    <div id="instructions">*Click the digits to calculate new values</div>
+    <!--End of Ctrl-->
+</div>
+    </body>
+</html>

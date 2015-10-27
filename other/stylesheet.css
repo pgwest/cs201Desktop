@@ -1,0 +1,90 @@
+
+
+
+html { 
+background: url(images/bg.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+
+
+#main_row {
+	border-top:solid black 2px;
+	border-bottom: solid black 2px;
+	margin-bottom: 10px;
+}
+
+#leftColumn {
+	border-right: solid red 2px;
+}
+
+#number {
+	display: inline-block;
+	width: 200px;
+	height: 25px;
+	padding: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+
+#name {
+	display: inline-block;
+	width: 200px;
+	height: 25px;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: "Ubuntu";
+}
+
+#email {
+	display: inline-block;
+	width: 200px;
+	height: 25px;
+	padding: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+
+
+#header {
+	display : inline;
+	margin-bottom: 35px;
+	background-color: #ffffff;
+	background-position: auto;
+	text-align: center;
+}
+
+.container-fluid {
+		background: url(http://uploads6.wikiart.org/images/georges-seurat/the-river-seine-at-la-grande-jatte-1888.jpg!Blog.jpg) 
+		no-repeat top; 
+		background-size: 100% 170px;
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	position: relative;
+}
+
+.col-md-12 {
+	background-color: #fff; 
+	margin-bottom: 10px;
+}
+
+.col-md-10 {
+	margin-top: 10px;
+}
+
+.col-md-2 {
+	border-right: solid red;
+}
+
